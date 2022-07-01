@@ -1,0 +1,33 @@
+.image {
+    flex: 0.5;
+    background-image: url('./banner.png');
+    background-repeat: no-repeat;
+    background-size: 100% 860px;
+    position: relative;
+}
+
+.content-img {
+    position: absolute;
+    bottom: 40px;
+    left: 52px;
+    margin-right: 20px;
+}
+
+.image__content {
+    width: 90%;
+    border-radius: 10px;
+    background-color: #0092C8;
+    color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.vertical_line {
+    border-left: 4px solid #4b42f5;
+    height: 100px;
+    padding-right: 20px;
+}
+.content > p {
+    font-size: 18px;
+}

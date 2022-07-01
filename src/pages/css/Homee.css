@@ -1,0 +1,18 @@
+.Homee {
+    display: flex;
+    background-color: #F5F5F5;
+    color: #121942;
+    margin-left: 150px !important;
+  }
+  .Spacebetween {
+    flex: 0.1;
+  }
+  select {
+    appearance: revert;
+  }
+  
+  :root {
+    --primary: #F5F5F5;
+    --light: #F8F8F8;
+    --dark: #252525;
+  }

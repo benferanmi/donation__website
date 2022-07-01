@@ -1,0 +1,34 @@
+:root {
+    --primary: #1888ff;
+  }
+  .btn {
+    padding: 8px 20px;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+  }
+  .login {
+    border-radius: 50px !important;
+    color: #121942 !important;
+    border-color: #121942 !important;
+    width: 120px !important;
+    height: 42px !important;
+    margin-right: 25px;
+}
+.signup {
+  background: #0092C8 !important;
+  border-radius: 50px !important;
+  color: #FFFFFF !important;
+  width: 135px !important;
+  border: none !important;
+  height: 42px !important;
+}
+  .btn:hover {
+    padding: 6px 18px;
+    transition: all 0.3s ease-out;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 4px;
+    border: 2px solid var(--primary);
+    transition: all 0.3s ease-out;
+  }

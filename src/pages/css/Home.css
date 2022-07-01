@@ -1,0 +1,194 @@
+.home {
+    flex: 0.4;
+    width: 100%;
+}
+
+.section__logo > img  {
+    width: 85px;
+    margin-top: 40px;
+}
+
+.section1__title {
+    margin-top:25px ;
+    margin-bottom: 15px;
+    width: 450px;
+}
+.section1__title > h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.section1__list {
+    display: flex;
+}
+.section1__list1 {
+    flex: 2.5;
+    margin-right: 15px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid rgb(228 222 226 / 87%);
+}
+.section1__list1:hover {
+    border: 1px solid #0092C8;
+}
+.section1__list1 > img {
+    padding-right: 20px;
+}
+.section1__list1 > p {
+    font-weight: 700;
+    padding-bottom: 0px !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #121942;
+}
+.section1__img {
+    display: flex;
+}
+.image1 {
+    position: relative;
+}
+.image1  > img {
+    position: absolute;
+    left: -45px;
+    top: -25px;
+}
+.inse {
+    left: -40px !important;
+    top: -16px !important;
+    width: 18px !important;
+}
+.lovehandicon {
+    left: -45px !important;
+    top: -20px !important;
+    width: 25px !important;
+}
+.handicon {
+    left: -65px !important;
+    top: 6px !important;
+    width: 45px !important;
+}
+.longerhand {
+    left: -34px !important;
+    top: 5px !important;
+}
+.longhand {
+    left: -37.90px !important;
+    top: 6px !important;
+}
+.shorthand {
+    left: -31px !important;
+    top: 6px !important;
+}
+
+.section1__subtext {
+    color: #121942;
+    font-family: 'Roboto';
+    margin-top: 10px;
+}
+.section1__subtext > p {
+    font-size: 18px;
+}
+
+.section2__title > h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+.section2__fill {
+    display: flex;
+}
+.section2__list {
+    flex: 0.5;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid rgb(228 222 226 / 87%);
+}
+.section2__list:hover {
+    border: 1px solid #0092C8;
+    color: #0092C8;
+    outline: none;
+}
+
+.section2__list > p {
+    color: #121942;
+    font-weight: 700;
+}
+.section2__list > p:hover {
+    color: #0092C8;
+}   /**********section three ends ************/
+    /**********section three starts **********/
+.section3__title > h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+.section3__fill {
+    display: flex;
+}
+.section3__list {
+    flex: 2.5;
+    margin-right: 25px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #121942;
+    border: 1px solid rgb(228 222 226 / 87%);
+}
+.section3__list:hover {
+    border: 1px solid #0092C8;
+    color: #0092C8;
+}
+.section3__list > p {
+    color: #121942;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.section3__list > p:hover {
+    color: #0092C8;
+}
+
+#nonSelected {
+    width: 80px;
+    margin-top: 10px;
+    color: #121942;
+    height: 40px;
+    border: 2px solid rgba(240, 235, 239, 0.87);
+  }
+
+  .donate__button {
+    margin-top: 30px;
+    width: 150px;
+    font-weight: 700;
+    height: 50px;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: #0092C8;
+    text-decoration: none !important;
+  }
+  .link__button {
+    color: white;
+    text-decoration: none;
+  }
+  .link__button:hover {
+    color: white !important;
+  }
+  button:focus { outline: none; }
+
+  .footer{
+    height: 50px;
+  }

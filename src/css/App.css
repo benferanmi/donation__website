@@ -1,0 +1,10 @@
+.App {
+  display: flex;
+  background-color: #F5F5F5;
+  color: #121942;
+  margin-left: 150px !important;
+}
+
+p {
+  padding-bottom: 0px !important;
+}
