@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://benferanmi.github.io/DONATE-REACT",
+  "engines": {
+    "node": "16.13.0",
+    "npm": "8.12.1"
+  },
   "dependencies": {
     "@fontsource/roboto": "^4.5.7",
     "@testing-library/jest-dom": "^5.16.4",
