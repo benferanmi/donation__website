@@ -1,4 +1,4 @@
-.container_signup1 {
+.container_signup {
     max-width: 40%;
     margin: auto;
     display: flex;
@@ -7,7 +7,7 @@
     justify-content: center;
     background-image: linear-gradient(to right, #fef3f3, #ffffff)
 }
-.signup_header1 {
+.signup_header {
     padding: 0px;
     gap: 4px;
     display: flex;
@@ -17,14 +17,14 @@ align-items: center;
 font-family: sans-serif;
 margin-bottom: 30px;
 }
-.signup_header1 h1 {
+.signup_header h1 {
     font-weight: 700;
     color: #121942;
 }
-.signup_header1 p {
+.signup_header p {
     font-size: 20px;
 }
-.social1 {
+.social {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -32,7 +32,7 @@ margin-bottom: 30px;
     gap: 25px;
     margin-bottom: 20px;
 }
-.social1 p {
+.social p {
     font-size: 15px;
     font-weight: 400;
     font-family: arial;
@@ -40,12 +40,12 @@ margin-bottom: 30px;
 .google{
     width: 210px;
     height: 60px;
+    cursor: pointer;
     border-radius: 10px;
     border: 1px solid #b3b4b5;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 }
 .google img {
     width: 30px;
@@ -63,24 +63,24 @@ margin-bottom: 30px;
 .apple img {
     padding-right: 5px;
 }
-.or1 {
+.or {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 12px;
-    width: 70%;
+    width: 75%;
     font-size: 20px;
     margin-bottom: 20px;
 }
-.or1 p {
+.or p {
     width: -webkit-fill-available;
 }
 .social__hr {
     margin: 0px ;
     width: 520px;
 }
-.form-group1 {
+.form-group {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -88,7 +88,7 @@ margin-bottom: 30px;
     gap: 16px;
     width: 445px;
 }
-.form-control1 {
+.form-control {
     border: 1px solid gray;
     width: 100%;
     border-radius: 10px;
@@ -96,7 +96,7 @@ margin-bottom: 30px;
     outline: none;
     padding: 0 30px;
 }
-.form-control1::placeholder {
+.form-control::placeholder {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -123,20 +123,19 @@ margin-bottom: 30px;
     font-size: 16px;
     font-family: sans-serif;
 }
-.sy1 {
+.sy {
     color: white;
     background-color: #0092C8;
     height: 55px;
     border-radius: 15px;
 }
-.alreadyhave1 {
+.alreadyhave {
     display: flex;
-    width: 52%;
+    width: 55% ;
     margin: auto;
     align-items: center;
     font-family: sans-serif;
     margin-top: 15px;
     margin-bottom: 30px;
     gap: 5px;
-
 }

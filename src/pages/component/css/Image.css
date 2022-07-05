@@ -2,13 +2,13 @@
     flex: 0.5;
     background-image: url('./banner.png');
     background-repeat: no-repeat;
-    background-size: 100% 860px;
+    background-size: 770px;
     position: relative;
 }
 
 .content-img {
     position: absolute;
-    bottom: 40px;
+    bottom: 50px;
     left: 52px;
     margin-right: 20px;
 }
