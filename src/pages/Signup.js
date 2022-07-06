@@ -128,7 +128,7 @@ function Signup() {
             ></input>
              <div className="alreadyhave">
               <p>Already have an account? </p>
-              <Link to='/signup'> <strong>Sign in</strong></Link>
+              <Link to='/login'> <strong>Sign in</strong></Link>
             </div>
             
           </div>
