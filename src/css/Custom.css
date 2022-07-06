@@ -1,6 +1,4 @@
-/*---------------------------------------------------------------------
-                            Text Weight 
------------------------------------------------------------------------*/
+
 .tw-1 {
     font-weight: 100;
   }
@@ -36,10 +34,7 @@
   .tw-9 {
     font-weight: 900;
   }
-  
-  /*---------------------------------------------------------------------
-                              Text Color 
-  -----------------------------------------------------------------------*/
+
   .font-white {
     color: #ffffff;
   }
@@ -55,10 +50,7 @@
   .font-yellow {
     color: #f9b707;
   }
-  
-  /*---------------------------------------------------------------------
-                            Background Color 
-  -----------------------------------------------------------------------*/
+
   .white-bg {
     background: #ffffff;
   }
@@ -75,9 +67,8 @@
     background: #f9b707;
   }
 
-/***************************
-       Padding All
-****************************/
+
+
 .pall {
     padding: 0px !important;
   }
@@ -150,9 +141,7 @@
     padding: 150px !important;
   }
   
-  /***************************
-    Padding Top and Bottom
-  ****************************/
+
   .ptb-0 {
     padding: 0 !important;
   }
@@ -225,9 +214,6 @@
     padding: 150px 0 !important;
   }
   
-  /***************************
-    Padding Left and right
-  ****************************/
   .plr-0 {
     padding: 0 !important;
   }
@@ -300,9 +286,6 @@
     padding: 0 150px !important;
   }
   
-  /***************************
-          Padding top
-  ****************************/
   .pt-0 {
     padding-top: 0px !important;
   }
@@ -375,9 +358,6 @@
     padding-top: 150px !important;
   }
   
-  /***************************
-        Padding Bottom
-  ****************************/
   .pb-0 {
     padding-bottom: 0px !important;
   }
@@ -450,9 +430,6 @@
     padding-bottom: 150px !important;
   }
   
-  /***************************
-        Padding Left
-  ****************************/
   .pl-0 {
     padding-left: 0 !important;
   }
@@ -525,9 +502,6 @@
     padding-left: 150px !important;
   }
   
-  /***************************
-        Padding Right
-  ****************************/
   .pr-0 {
     padding-right: 0px !important;
   }
@@ -599,10 +573,6 @@
   .pr-150 {
     padding-right: 150px !important;
   }
-  
-  /***************************
-         Margin All
-  ****************************/
   .mall-0 {
     margin: 0 !important;
   }
@@ -674,10 +644,6 @@
   .mall-150 {
     margin: 150px !important;
   }
-  
-  /***************************
-     Margin Top and Bottom
-  ****************************/
   .mtb-0 {
     margin: 0 !important;
   }
@@ -749,10 +715,6 @@
   .mtb-150 {
     margin: 150px 0 !important;
   }
-  
-  /***************************
-     Margin Left and Right
-  ****************************/
   .mlr-0 {
     margin: 0 !important;
   }
@@ -826,10 +788,6 @@
   .mlr-150 {
     margin: 0 150px !important;
   }
-  
-  /***************************
-          Margin Top
-  ****************************/
   .mt-0 {
     margin-top: 0px !important;
   }
@@ -902,9 +860,6 @@
     margin-top: 150px !important;
   }
   
-  /***************************
-        Margin Bottom
-  ****************************/
   .mb-0 {
     margin-bottom: 0px !important;
   }
@@ -976,10 +931,6 @@
   .mb-150 {
     margin-bottom: 150px !important;
   }
-  
-  /***************************
-         Margin Left
-  ****************************/
   .ml-0 {
     margin-left: 0px !important;
   }
@@ -1052,9 +1003,6 @@
     margin-left: 150px !important;
   }
   
-  /***************************
-        Margin Right
-  ****************************/
   .mr-0 {
     margin-right: 0px !important;
   }
@@ -1211,10 +1159,6 @@
     padding: 15px 35px;
     font-size: 20px;
   }
-  
-
-
-  /**** width *******/
 
   .width-65 {
     width: 65px;
