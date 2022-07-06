@@ -1,0 +1,15 @@
+.prifoot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 100px !important;
+    color: gray;
+    background-image: linear-gradient(to right, #fef3f3, #ffffff)
+}
+.privacy {
+    text-decoration: none;
+    color: gray !important;
+}

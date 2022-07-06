@@ -38,87 +38,55 @@ function Home() {
           <div className="section1__title">
             <h2>Donate to a Cause You Care About</h2>
           </div>
+            
           <div className="section1__list mb-20">
             <div className="section1__list1">
-              <img
-                src="https://res.cloudinary.com/benferanmi/image/upload/v1656538101/lovehands_h9qrlr.png"
-                className="width-45"
-                alt="love hands"
-              ></img>
-              <p className="cause-title">
+            <input type="radio" name="donationfor" className="section1__radio" 
+            id="orphan-sponsorship" />
+            <label className="section1__label" for="orphan-sponsorship">
+            <img src="https://res.cloudinary.com/benferanmi/image/upload/v1656538101/lovehands_h9qrlr.png"
+                className="width-45" alt="love hands"/> 
+                <p className="cause-title">
                 Orphan <br></br>Sponsorship
-              </p>
+              </p> </label>
+              
             </div>
             <div className="section1__list1 mr-0">
-              <img
-                src="https://res.cloudinary.com/benferanmi/image/upload/v1656538220/donate/walkingicon/woman_qvyh75.png"
-                className="pr-0 width-12"
-                alt="walking icon woman"
-              ></img>
-              <img
-                src="https://res.cloudinary.com/benferanmi/image/upload/v1656538220/donate/walkingicon/man_csoxlg.png"
-                className="width-15"
-                alt="walking icon man"
-              ></img>
-              <p className="cause-title">
-                Refugees <br></br> Relifs
-              </p>
+            <input type="radio" name="donationfor" className="section1__radio" 
+            id="Refuges-reliefs" />
+            <label className="section1__label" for="Refuges-reliefs">
+            <img src="https://res.cloudinary.com/benferanmi/image/upload/v1657050137/donate/walking_xqsujm.jpg"
+                className="width-45" alt="love hands"/> 
+                <p className="cause-title pt-10">
+                Refuges <br></br> Reliefs
+              </p> </label>
             </div>
           </div>
           <div className="section1__list">
-            <div className="section1__list1">
-              <div className="section1__img">
-                <div className="image1">
-                  <img
-                    src="https://res.cloudinary.com/benferanmi/image/upload/v1656538207/donate/drop_u1q1qb.png"
-                    className="width-30"
-                    alt="water drop icon"
-                  ></img>
-                  <img
-                    src="https://res.cloudinary.com/benferanmi/image/upload/v1656538207/donate/inse_elho25.png"
-                    className="inse"
-                    alt=""
-                  ></img>
-                </div>
-              </div>
-              <p>
+         
+          <div className="section1__list1">
+            <input type="radio" name="donationfor" className="section1__radio" 
+            id="Water wells" />
+            <label className="section1__label" for="Water wells">
+            <img src="https://res.cloudinary.com/benferanmi/image/upload/v1657050147/donate/water_awomkc.jpg"
+                className="width-45" alt="love hands"/> 
+                <p className="cause-title pt-10">
                 Water <br></br> Wells
-              </p>
+              </p> </label>
             </div>
-            <div className="section1__list1 mr-0">
-              <span className="sssppp"></span>
-              <div className="section1__img ">
-                <div className="image1">
-                  <img
-                    src="https://res.cloudinary.com/benferanmi/image/upload/v1656538248/donate/loveonhandicon/love_vzej2y.png"
-                    className="lovehandicon"
-                    alt="water drop icon"
-                  ></img>
-                  <img
-                    src="https://res.cloudinary.com/benferanmi/image/upload/v1656538249/donate/loveonhandicon/hand_oed8de.png"
-                    className="handicon"
-                    alt=""
-                  ></img>
-                  <img
-                    src="https://res.cloudinary.com/benferanmi/image/upload/v1656538248/donate/loveonhandicon/longer_hnz8y8.png"
-                    alt=""
-                    className="longerhand"
-                  ></img>
-                  <img
-                    src="https://res.cloudinary.com/benferanmi/image/upload/v1656538248/donate/loveonhandicon/long_uzninq.png"
-                    alt=""
-                    className="longhand"
-                  ></img>
-                  <img
-                    src="https://res.cloudinary.com/benferanmi/image/upload/v1656538248/donate/loveonhandicon/short_hgnlkv.png"
-                    alt=""
-                    className="shorthand"
-                  ></img>
-                </div>
-              </div>
 
-              <p>Zakat</p>
+            <div className="section1__list1 mr-0">
+            <input type="radio" name="donationfor" className="section1__radio" 
+            id="Zakat" />
+            <label className="section1__label" for="Zakat">
+            <img src="https://res.cloudinary.com/benferanmi/image/upload/v1657050142/donate/lovehand_e8bp1g.jpg"
+                className="width-45" alt="love hands"/> 
+                <p className="cause-title pt-10">
+                Zakat
+              </p> </label>
             </div>
+
+
           </div>
           <div className="section1__subtext">
             <p>
@@ -134,10 +102,12 @@ function Home() {
 
           <div className="section2__fill">
             <div className="section2__list mr-20">
-              <p>One-time giving</p>
+              <input type="radio" name="givingoptions" id="one time giving"/>
+              <label for="one time giving"><p className="cause-title">One time giving</p></label>
             </div>
-            <div className="section2__list">
-              <p>Monthly Giving</p>
+            <div className="section2__list mr-0">
+              <input type="radio" name="givingoptions" id="Monthly Giving"/>
+              <label for="Monthly Giving"><p className="cause-title">Monthly Giving</p></label>
             </div>
           </div>
         </div>
@@ -148,22 +118,28 @@ function Home() {
 
           <div className="section3__fill">
             <div className="section3__list">
-              <p>$100.00</p>
+              <input type="radio" name="amount" id="100"/>
+              <label for="100"><p className="cause-title">$100</p></label>
             </div>
             <div className="section3__list">
-              <p>$5.00</p>
+              <input className="radio" type="radio" name="amount" id="50"/>
+              <label for="50"><p className="cause-title">$50</p></label>
             </div>
             <div className="section3__list">
-              <p>$25.00</p>
+              <input type="radio" name="amount" id="25"/>
+              <label for="25"><p className="cause-title">$25</p></label>
             </div>
-            <div className="section3__list mr-0">
-              <p>other</p>
+            <div className="section3__list mr-0 typeoftext">
+              <input type="text" name="amount" placeholder="custom" id="custom" />
             </div>
           </div>
 
           <div id="nonSelected"></div>
         </div>
-
+        <div className="home__select">
+          <input type="checkbox" name="honorselect" />
+          <p>This gift is in Honor or in Memory</p>
+        </div>
         <button className="donate__button">
           {user ? (
             <Link to="/checkout" className="link__button">
@@ -175,8 +151,6 @@ function Home() {
             </Link>
           )}
         </button>
-
-        <div className="footer"></div>
       </div>
     </div>
   );

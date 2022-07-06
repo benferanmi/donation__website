@@ -1,0 +1,24 @@
+header {
+    background-image: linear-gradient(to right, #fef3f3, #ffffff)
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-top: 20px;
+    
+}
+.headlogo {
+    height: 55px;
+    margin-left: 3%;
+}
+.head-hr {
+    margin: 0px;
+    width: 100%;
+
+}
+.enimg {
+    width: 20px;
+    padding-bottom: 5px;
+}

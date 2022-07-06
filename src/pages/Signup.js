@@ -4,8 +4,9 @@ import { Link, useNavigate } from "react-router-dom";
 import { register, reset } from "../features/auth/authSlice";
 import { toast } from "react-toastify";
 import Header from "./Header";
-import "../css/Signup.css";
+import "./css/Signup.css";
 import Spinner from "./component/Spinner";
+import Footer from "./Footer";
 
 function Signup() {
   const [formData, setFormData] = useState({
@@ -72,11 +73,13 @@ function Signup() {
           <p style={{ color: "gray" }}>Sign up to use Hands for Charity</p>
         </div>
         <div className="social">
-          <p>Google</p>
-          <p>Apple</p>
+        <p className="google"><img src="https://res.cloudinary.com/benferanmi/image/upload/v1657026787/donate/google_fj7mdw.jpg" alt="Google icon"></img> Sign in with Google</p>
+          <p className="apple"><img src="https://res.cloudinary.com/benferanmi/image/upload/v1657026797/donate/apple_vyjolm.png" alt="Apple icon"></img> Sign in with Apple</p>
         </div>
         <div className="or">
+        <hr className="social__hr"></hr>
           <p>Or with Email</p>
+          <hr className="social__hr"></hr>
         </div>
         <form onSubmit={submit}>
           <div className="form-group" onSubmit={submit}>
@@ -112,14 +115,26 @@ function Signup() {
               value={password2}
               onChange={onChange}
             />
+            <div className="remember">
+                <input type="checkbox" name="remember me" className="remember__select"/>
+                <p>Remember me</p>
+                <Link to='/forgetpassword' className='forget-pass'> Forget password?</Link>
+              </div>
             <input
               type="submit"
               className="form-control sy"
+              value='Sign up'
               placeholder="Sign Up"
-            />
+            ></input>
+             <div className="alreadyhave">
+              <p>Already have an account? </p>
+              <Link to='/signup'> <strong>Sign in</strong></Link>
+            </div>
+            
           </div>
         </form>
       </div>
+      < Footer />
     </div>
   );
 }

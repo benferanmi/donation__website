@@ -1,6 +1,6 @@
 .Homee {
     display: flex;
-    background-color: #F5F5F5;
+    background-color: linear-gradient(to right, #fef3f3, #ffffff);
     color: #121942;
     margin-left: 150px !important;
   }

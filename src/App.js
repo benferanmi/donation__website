@@ -1,12 +1,14 @@
 import "./css/App.css";
 import Homee from "./pages/Homee.js";
 import "./css/Bootstrap.min.css";
+import './css/Custom.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Checkout from "./pages/Checkout";
 import Signup from "./pages/Signup";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Login from "./pages/Login";
+
 
 function App() {
   return (
