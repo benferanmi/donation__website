@@ -26,9 +26,6 @@ function Login() {
     }
     if (isSuccess) {
       toast.success("Log in successfully");
-      setTimeout(() => {
-        isLoading();
-      }, 3000);
       navigate("/");
     }
   }, [user, isError, isSuccess, message, dispatch, navigate, isLoading]);
