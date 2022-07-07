@@ -218,6 +218,7 @@ background-color: #93e0ff;
     }
     .checkoutfooter__bottom {
         padding-bottom: 40px;
+        gap: 2px;
     }
     .checkoutfooter__logo img{
         width: 90px;
@@ -227,14 +228,15 @@ background-color: #93e0ff;
         margin: 20px 0px;
     }
     .check__list__title p {
-        font-size: 100%;
+        font-size: 70%;
         text-align: center;
     }
     .link1 {
-        font-size: 100%;
+        font-size: 50%;
     }
     .check__list__options {
         gap: 0px;
+        text-align: center;
     }
     .link2 {
         padding-top: 10px;
@@ -266,4 +268,18 @@ background-color: #93e0ff;
         height: 30%;
         width: 15%;
     }
+    .check__list__1 {
+        flex: 0.25;
+    }
+    .check__list__2 {
+        flex: 0.25;
+    
+    }
+    .check__list__3 {
+        flex: 0.25;
+    }
+    .check__list__4 {
+        flex: 0.25;
+    }
+    
 }

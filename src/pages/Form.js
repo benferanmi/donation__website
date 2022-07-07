@@ -51,7 +51,7 @@ function Form() {
                 <div className='form__lists1'>
             <div className='form__list__option'>
                     < FaGlobe className='form__icon'/>
-                    <input type="country" name="country" value='' placeholder='Country' id='country' className='form__input'/>
+                    <input type="country" name="country" placeholder='Country' id='country' className='form__input'/>
                 </div>
                 <div className='form__list__option'>
                     < FaCity className='form__icon' />
@@ -61,7 +61,7 @@ function Form() {
             <div className='form__lists1'>
             <div className='form__list__option'>
                     < FaRegFlag className='form__icon'/>
-                    <input type="text" name="province" value='' placeholder='Province/State' id='province' className='form__input'/>
+                    <input type="text" name="province" placeholder='Province/State' id='province' className='form__input'/>
                 </div>
                 <div className='form__list__option'>
                     < FaAddressCard className='form__icon' />

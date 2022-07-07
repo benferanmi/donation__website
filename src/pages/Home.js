@@ -228,15 +228,10 @@ function Home() {
           <p>This gift is in Honor or in Memory</p>
         </div>
         <div className="link__button">
-          {user ? (
-            <PayButton pay={data} />
-          ) : (
-            <Link to="/login" className="link__button">
+        <Link to="/checkout" className="link__button">
               <button className="donate__button">Donate Now</button>
             </Link>
-          )}
         </div>
-        {/* </form> */}
       </div>
     </div>
   );

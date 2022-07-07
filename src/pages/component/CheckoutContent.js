@@ -23,9 +23,6 @@ function CheckoutContent() {
     <div className="vector1"><img src="https://res.cloudinary.com/benferanmi/image/upload/v1657133636/donate/faceicon_mumroh.jpg" alt="vector"></img></div>
     </div>
 </div>
-
-
-
         <div className='don-topic'>
             <h1>$1500 (one time) </h1>
             <p>Thank you for making a differnce to the communities accross the World. </p>
