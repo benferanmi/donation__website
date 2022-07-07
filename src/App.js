@@ -1,4 +1,5 @@
 import "./css/App.css";
+import './css/mobile.css';
 import Homee from "./pages/Homee.js";
 import "./css/Bootstrap.min.css";
 import './css/Custom.css'

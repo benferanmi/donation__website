@@ -31,3 +31,35 @@
 .content > p {
     font-size: 18px;
 }
+
+
+@media screen and (max-width: 959px) {
+    .image {
+        flex: none;
+    background-image: none;
+    background-size: 0px ;
+    background-repeat: unset;
+    position: unset;
+    }
+    .content-img {
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        margin: 0px;
+    }
+    .image__content {
+        width: 100%;
+    }
+    .content p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .image{
+        flex: none;
+    }
+    .content p {
+        font-size: 14px;
+    }
+}

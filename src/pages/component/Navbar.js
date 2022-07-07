@@ -90,7 +90,7 @@ function Navbar() {
             </Link>
           </li>
         </ul>
-        <Button />
+        <Button className='navbar__button' />
       </nav>
     </>
   );

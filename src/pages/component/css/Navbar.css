@@ -1,5 +1,3 @@
-
-
 .Don-btn {
   margin-right: 17%;
 }
@@ -139,7 +137,22 @@
       transition: 250ms;
     }
   
-    button {
+    .navbar__button {
       display: none;
     }
+  }
+  @media screen and (max-width: 959px) {
+    .Don-btn{
+      margin-right: 0px;
+      position: absolute;
+      right: 5px;
+      padding-top: 10px;
+    }
+    .nav-menu {
+      display: none !important;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+      
   }

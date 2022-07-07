@@ -1161,7 +1161,7 @@
   }
 
   .width-65 {
-    width: 65px;
+    width: 65px !important;
   } 
 
   .width-55 {
@@ -1188,4 +1188,34 @@
 
 .sssppp {
   padding-left: 45px;
+}
+@media screen and (max-width: 959px) {
+    .mr-20 {
+      margin-right: 0px !important;
+    }
+    .mr-15 {
+      margin-right: 10px !important;
+    }
+    .mr-10{
+      margin-right: 8px !important;
+    }
+    .ml-30 {
+      margin-left: 15px !important;
+    }
+    .ml-20 {
+      margin-left: 0px !important;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+  .mr-15 {
+    margin-right: 8px !important;
+  }
+  .mr-10{
+    margin-right: 5px !important;
+  }
+  .ml-30 {
+    margin-left: 10px !important;
+  }
 }

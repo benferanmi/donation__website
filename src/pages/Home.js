@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./css/Home.css";
 import "./css/Custom.css";
+import './css/homemobile.css';
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import PayButton from "./component/PayButton";
@@ -43,7 +44,7 @@ function Home() {
             <h2>Donate to a Cause You Care About</h2>
           </div>
 
-          <div className="section1__list mb-20">
+          <div className="section1__list mb-40">
             <div className="section1__list1">
               <input
                 type="radio"
@@ -56,7 +57,7 @@ function Home() {
               <label className="section1__label" htmlFor="orphan-sponsorship">
                 <img
                   src="https://res.cloudinary.com/benferanmi/image/upload/v1656538101/lovehands_h9qrlr.png"
-                  className="width-45"
+                  className="width-45 width-65"
                   alt="love hands"
                 />
                 <p className="cause-title">
@@ -107,7 +108,7 @@ function Home() {
               </label>
             </div>
 
-            <div className="section1__list1 mr-0">
+            <div className="section1__list1 zakat mr-0">
               <input
                 type="radio"
                 name="donationfor"
@@ -180,7 +181,7 @@ function Home() {
                 onChange={onChange}
               />
               <label htmlFor="100">
-                <p className="cause-title">$100</p>
+                <p className="cause-title ml-20">$100</p>
               </label>
             </div>
             <div className="section3__list">
@@ -193,7 +194,7 @@ function Home() {
                 onChange={onChange}
               />
               <label htmlFor="50">
-                <p className="cause-title">$50</p>
+                <p className="cause-title ml-20">$50</p>
               </label>
             </div>
             <div className="section3__list">
@@ -205,7 +206,7 @@ function Home() {
                 onChange={onChange}
               />
               <label htmlFor="25">
-                <p className="cause-title">$25</p>
+                <p className="cause-title ml-20">$25</p>
               </label>
             </div>
             <div className="section3__list mr-0 typeoftext">
@@ -226,7 +227,7 @@ function Home() {
           <input type="checkbox" name="honorselect" />
           <p>This gift is in Honor or in Memory</p>
         </div>
-        <div>
+        <div className="link__button">
           {user ? (
             <PayButton pay={data} />
           ) : (
