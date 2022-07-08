@@ -18,16 +18,6 @@ function Home() {
     }));
   };
 
-  const submit = (e) => {
-    e.preventDefault();
-    // console.log(data);
-    const cartData = {
-      amount,
-      name,
-    };
-    console.log(cartData);
-  };
-
   return (
     <div className="home">
       <div className="sections">
@@ -52,6 +42,7 @@ function Home() {
                 id="orphan-sponsorship"
                 value="orphan-sponsorship"
                 onChange={onChange}
+                required
               />
               <label className="section1__label" htmlFor="orphan-sponsorship">
                 <img
@@ -146,6 +137,7 @@ function Home() {
                 id="one time giving"
                 value="one time giving"
                 onChange={onChange}
+                required
               />
               <label htmlFor="one time giving">
                 <p className="cause-title">One time giving</p>
@@ -178,6 +170,7 @@ function Home() {
                 id="100"
                 value="100"
                 onChange={onChange}
+                required
               />
               <label htmlFor="100">
                 <p className="cause-title">$100</p>

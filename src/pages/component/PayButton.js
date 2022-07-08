@@ -10,18 +10,26 @@ function PayButton({ pay }) {
     axios
       .post(`${url}/api/stripe/create-checkoutsession`, {
         pay,
-        userId: user._id,
+        user,
       })
       .then((res) => {
         if (res.data.url) {
           window.location.href = res.data.url;
+        }
+        if (res.data.error) {
+          console.log(res.data.error);
         }
       })
       .catch((err) => {
         console.log(err.message);
       });
     console.log(pay);
+    console.log(user);
   };
+  if (!pay.amount || !pay.donationfor || !pay.givingoptions) {
+    // window.location.href = "/";
+    return <div>Please add all fields</div>;
+  }
   return (
     <div>
       <button className="donate__button" onClick={handleCheckout}>
