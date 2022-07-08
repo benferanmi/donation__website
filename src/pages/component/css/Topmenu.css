@@ -52,7 +52,7 @@ select {
 }
 
 .plan__select {
-    background: none;
+    background: inherit;
     text-align: left;
     align-items: center;
     border: 1px solid #FFFFFF;
@@ -66,11 +66,12 @@ select {
 }
 .sub__select {
     border: none;
-    background-color:#121942;
+    background-color: inherit;
     color: white;
     width: 130px;
     text-align: left;
     padding-left: 10px;
+    outline: none;
 }
 .header__amount {
     border: 1px solid #F5F5F5;
@@ -88,6 +89,89 @@ select {
     color: #121942;
     height: 35px;
     border-radius: 50px !important;
-    width: 135px !important;
+    width: 135px ;
     border: none !important;
+}
+
+.lan-one {
+    display: flex;
+    align-items: center;
+
+}
+.lan-two {
+    display: flex;
+   align-items: center;
+}
+@media screen and (max-width: 959px) {
+    .lan-one{
+        width: 90%;
+        flex: 0.4;
+        align-items: center;
+        justify-content: center;
+    }
+    .lan-two {
+        flex: 0.6;
+    }
+    .top__text3, .top__text1, .top__text2{
+        font-size: 87%;
+    }
+    .header__donate {
+        display: flex;
+    }
+    
+    .header__top {
+        height: 100px;
+    }
+    .top__donate{
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+    }
+    .header__amount {
+        width: 75%;
+        height: 30px;
+    }
+    .zakarat {
+        width: 50%;
+    }
+    .plan__select {
+        width: 38%;
+    }
+    .sub__select {
+        width: 100%;
+        padding-left: 0px;
+    }
+    .header__submit {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .lan-one{
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .header__top {
+        height: 100px;
+    }
+    .top__donate{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+    .header__amount {
+        width: 80px;
+        height: 30px;
+    }
+    .plan__select {
+        width: 100px;
+    }
+    .sub__select {
+        width: 100%;
+    }
+    .header__submit {
+        width: 100px;
+    }
 }

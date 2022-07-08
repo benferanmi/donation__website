@@ -1,0 +1,231 @@
+
+@media screen and (max-width: 959px) {
+    .home {
+      flex: none;
+      width: inherit;
+    }
+    .section__logo {
+      display: flex;
+      justify-content: center;
+    }
+    .link__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .section1__title {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .section1__title h2 {
+      font-size: 36px;
+      text-align: center;
+    }
+    .section1__list1 {
+        flex: 2.5;
+        margin-right: 8%;
+        height: 152px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        cursor: pointer;
+        border: 1px solid rgb(228 222 226 / 87%);
+    }
+    label::after {
+        height: 150px;
+        border-radius: 30px;
+        padding: 0px !important ;
+    }
+    .zakat label::after {
+        height: 155px;
+    }
+    .cause-title {
+        margin: auto;
+        text-align: center;
+    }
+
+    .section1__label {
+        flex-direction: column;
+    }
+    .section1__label img {
+        margin: auto;
+    }
+    label {
+        padding-left: 0px !important;
+    }
+    .zakat label {
+        padding-top:50px ;
+    }
+    .section1__subtext {
+        margin-top: 25px;
+    }
+    .section1__subtext p {
+        font-size: 22px;
+    }
+    .section2__title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      .section2__title h2 {
+        font-size: 36px;
+        text-align: center;
+      }
+      .section2__fill {
+        flex-direction: row;
+        gap: 3%;
+      }
+
+      .section2__list {
+        margin-right: 0px !important;
+        border: none;
+      }
+      .section3__title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px ;
+        margin-top: 10px;
+      }
+      .section3__title h2 {
+        font-size: 36px;
+        text-align: center;
+      }
+      .section3__list {
+        margin-right: 15px;
+        border: none;
+      }
+      .section3__list label::after {
+        height: 43px;
+        border-radius: 10px;
+      }
+      .home__select p {
+        font-size: 18px;
+      }
+      .home__select input{
+        height: 20px;
+        width: 20px;
+      }
+    .width-45 {
+        width: 65px !important;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+  .home {
+    flex: none;
+    width: inherit;
+  }
+  .link__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .section__logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section1__title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .section1__title h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+  .section1__list1 {
+      flex: 2.5;
+      margin-right: 15px;
+      height: 152px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 30px;
+      cursor: pointer;
+      border: 1px solid rgb(228 222 226 / 87%);
+  }
+  label::after {
+      height: 150px;
+      border-radius: 30px;
+      padding: 0px !important ;
+  }
+  .zakat label::after {
+      height: 155px;
+  }
+  .cause-title {
+      margin: auto;
+      text-align: center;
+  }
+
+  .section1__label {
+      flex-direction: column;
+  }
+  .section1__label img {
+      margin: auto;
+  }
+  label {
+      padding-left: 0px !important;
+  }
+  .zakat label {
+      padding-top:50px ;
+  }
+  .section1__subtext {
+      margin-top: 25px;
+  }
+  .section1__subtext p {
+      font-size: 12px;
+  }
+  .section2__title {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .section2__title h2 {
+      font-size: 26px;
+      text-align: center;
+    }
+    .section2__fill {
+      flex-direction: column;
+    }
+
+    .section2__list {
+      margin-right: 0px !important;
+      border: none;
+    }
+    .section3__title {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 10px ;
+    }
+    .section3__title h2 {
+      font-size: 26px;
+      text-align: center;
+    }
+    .section3__list {
+      margin-right: 15px;
+      border: none;
+    }
+    .section3__list label::after {
+      height: 43px;
+      border-radius: 10px;
+    }
+    .home__select p {
+      font-size: 18px;
+    }
+    .home__select input{
+      height: 20px;
+      width: 20px;
+    }
+  .width-45 {
+      width: 65px !important;
+  }
+}
