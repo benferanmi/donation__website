@@ -11,11 +11,38 @@
   align-items: center;
 }
 
+ @keyframes spinner {
+        0% {
+          transform: translate3d(-50%, -50%, 0) rotate(0deg);
+        }
+        100% {
+          transform: translate3d(-50%, -50%, 0) rotate(360deg);
+        }
+      }
+
 .loadingSpinner {
-  width: 64px;
-  height: 64px;
-  border: 8px solid;
-  border-color: rgb(16, 205, 238) transparent rgb(135, 224, 240) transparent;
+  animation: 1.5s linear infinite spinner;
+  animation-play-state: inherit;
+  border: solid 5px #cfd0d1;
+  border-bottom-color: #1c87c9;
   border-radius: 50%;
-  animation: spin 1.2s linear infinite;
+  content: "";
+  height: 40px;
+  width: 40px;
+  /* position: absolute; */
+  top: 10%;
+  left: 10%;
+  transform: translate3d(-50%, -50%, 0);
+  will-change: transform;
+
 }
+
+        /* animation: spin 1.5s linear infinite spinner;
+        animation-play-state: inherit;
+        border: 8px solid;
+        height: 64px;
+        width: 64px;
+        border-color: rgb(16, 205, 238) transparent rgb(135, 224, 240) transparent;
+        border-radius: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        will-change: transform; */

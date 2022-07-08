@@ -1,32 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, createContext } from "react";
 import "./css/Home.css";
 import "./css/Custom.css";
-import './css/homemobile.css';
+import "./css/homemobile.css";
 import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
-import PayButton from "./component/PayButton";
+import { useStateValue } from "./StateProvider";
 
 function Home() {
-  const { user } = useSelector((state) => state.auth);
+  const [{ basket }, dispatch] = useStateValue();
+  console.log(basket);
+  const bask = () => {
+    dispatch({
+      type: "ADD_TO_BASKET",
+      item: {
+        id: "1",
+        amount: data.amount,
+        name: data,
+      },
+    });
+  };
   const [data, setData] = useState({});
 
-  const { amount, name } = data;
-
+  const { amount } = data;
   const onChange = (e) => {
     setData((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.value,
     }));
-  };
-
-  const submit = (e) => {
-    e.preventDefault();
-    // console.log(data);
-    const cartData = {
-      amount,
-      name,
-    };
-    console.log(cartData);
   };
 
   return (
@@ -53,6 +52,7 @@ function Home() {
                 id="orphan-sponsorship"
                 value="orphan-sponsorship"
                 onChange={onChange}
+                required
               />
               <label className="section1__label" htmlFor="orphan-sponsorship">
                 <img
@@ -147,6 +147,7 @@ function Home() {
                 id="one time giving"
                 value="one time giving"
                 onChange={onChange}
+                required
               />
               <label htmlFor="one time giving">
                 <p className="cause-title">One time giving</p>
@@ -179,6 +180,7 @@ function Home() {
                 id="100"
                 value="100"
                 onChange={onChange}
+                required
               />
               <label htmlFor="100">
                 <p className="cause-title ml-20">$100</p>
@@ -228,9 +230,11 @@ function Home() {
           <p>This gift is in Honor or in Memory</p>
         </div>
         <div className="link__button">
-        <Link to="/checkout" className="link__button">
-              <button className="donate__button">Donate Now</button>
-            </Link>
+          <Link to="/checkout" className="link__button">
+            <button onClick={bask} className="donate__button">
+              Donate Now
+            </button>
+          </Link>
         </div>
       </div>
     </div>

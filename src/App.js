@@ -2,7 +2,7 @@ import "./css/App.css";
 import './css/mobile.css';
 import Homee from "./pages/Homee.js";
 import "./css/Bootstrap.min.css";
-import './css/Custom.css'
+import "./css/Custom.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Checkout from "./pages/Checkout";
 import Signup from "./pages/Signup";
