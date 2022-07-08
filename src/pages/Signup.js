@@ -59,6 +59,7 @@ function Signup() {
       };
       dispatch(register(userData));
     }
+    // stressing
   };
   if (isLoading) {
     return <Spinner />;
@@ -73,11 +74,23 @@ function Signup() {
           <p style={{ color: "gray" }}>Sign up to use Hands for Charity</p>
         </div>
         <div className="social">
-        <p className="google"><img src="https://res.cloudinary.com/benferanmi/image/upload/v1657026787/donate/google_fj7mdw.jpg" alt="Google icon"></img> Sign in with Google</p>
-          <p className="apple"><img src="https://res.cloudinary.com/benferanmi/image/upload/v1657026797/donate/apple_vyjolm.png" alt="Apple icon"></img> Sign in with Apple</p>
+          <p className="google">
+            <img
+              src="https://res.cloudinary.com/benferanmi/image/upload/v1657026787/donate/google_fj7mdw.jpg"
+              alt="Google icon"
+            ></img>{" "}
+            Sign in with Google
+          </p>
+          <p className="apple">
+            <img
+              src="https://res.cloudinary.com/benferanmi/image/upload/v1657026797/donate/apple_vyjolm.png"
+              alt="Apple icon"
+            ></img>{" "}
+            Sign in with Apple
+          </p>
         </div>
         <div className="or">
-        <hr className="social__hr"></hr>
+          <hr className="social__hr"></hr>
           <p>Or with Email</p>
           <hr className="social__hr"></hr>
         </div>
@@ -116,25 +129,34 @@ function Signup() {
               onChange={onChange}
             />
             <div className="remember">
-                <input type="checkbox" name="remember me" className="remember__select"/>
-                <p>Remember me</p>
-                <Link to='/forgetpassword' className='forget-pass'> Forget password?</Link>
-              </div>
+              <input
+                type="checkbox"
+                name="remember me"
+                className="remember__select"
+              />
+              <p>Remember me</p>
+              <Link to="/forgetpassword" className="forget-pass">
+                {" "}
+                Forget password?
+              </Link>
+            </div>
             <input
               type="submit"
               className="form-control sy"
-              value='Sign up'
+              value="Sign up"
               placeholder="Sign Up"
             ></input>
-             <div className="alreadyhave">
+            <div className="alreadyhave">
               <p>Already have an account? </p>
-              <Link to='/login'> <strong>Sign in</strong></Link>
+              <Link to="/login">
+                {" "}
+                <strong>Sign in</strong>
+              </Link>
             </div>
-            
           </div>
         </form>
       </div>
-      < Footer />
+      <Footer />
     </div>
   );
 }
