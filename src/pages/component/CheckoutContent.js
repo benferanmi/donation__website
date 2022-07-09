@@ -2,8 +2,17 @@ import React from "react";
 import "./css/CheckoutContent.css";
 import Checkoutfooter from "./Checkoutfooter";
 import Form from "../Form.js";
+import { useStateValue } from "../StateProvider";
 
 function CheckoutContent() {
+  const [{ basket }] = useStateValue();
+  console.log(basket);
+  const data = basket.map((item) => {
+    return {
+      name: item.name,
+      amount: item.amount,
+    };
+  }, []);
   return (
     <div className="CheckoutContent">
       <div className="header__banner">
@@ -31,7 +40,7 @@ function CheckoutContent() {
         </div>
       </div>
       <div className="don-topic">
-        <h1>$1500 (one time) </h1>
+        <h1>${data[0].amount} (one time) </h1>
         <p>
           Thank you for making a differnce to the communities accross the World.{" "}
         </p>

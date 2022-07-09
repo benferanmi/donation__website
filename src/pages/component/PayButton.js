@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import axios from "axios";
-import { useSelector } from "react-redux";
 import "./css/Homebar.css";
+import { useStateValue } from "../StateProvider";
 
-function PayButton({ pay }) {
-  const { user } = useSelector((state) => state.auth);
+function PayButton() {
+  const [{ basket }] = useStateValue();
   const url = "http://localhost:5000";
   const handleCheckout = async (e) => {
+    const data = basket.map((item) => {
+      return {
+        name: item.name,
+        amount: item.amount,
+      };
+    }, []);
     axios
       .post(`${url}/api/stripe/create-checkoutsession`, {
-        pay,
-        user,
+        data,
       })
       .then((res) => {
         if (res.data.url) {
@@ -23,17 +28,12 @@ function PayButton({ pay }) {
       .catch((err) => {
         console.log(err.message);
       });
-    console.log(pay);
-    console.log(user);
+    console.log(data);
   };
-  if (!pay.amount || !pay.donationfor || !pay.givingoptions) {
-    // window.location.href = "/";
-    return <div>Please add all fields</div>;
-  }
   return (
     <div>
       <button className="donate__button" onClick={handleCheckout}>
-        Donate Now
+        Proceed to payment
       </button>
     </div>
   );
