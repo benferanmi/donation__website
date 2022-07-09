@@ -9,6 +9,8 @@ import Signup from "./pages/Signup";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
+import Donationlist from "./pages/Donationlist";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/lists" element={<Donationlist />} />
         </Routes>
       </Router>
       <ToastContainer />
