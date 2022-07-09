@@ -146,7 +146,7 @@
 .dashboard-lists {
     margin-top: 30px;
     border-radius: 10px;
-    border: 1px solid gray;
+    border: 1px solid rgb(227, 225, 225);
     
 }
 .donation-list-head {
@@ -196,6 +196,9 @@
 }
 .last-list {
     text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .dash-lists-1{
     display: flex;
@@ -216,12 +219,17 @@
 }
 .dash-list-hr {
     margin: 40px 0;
+    color: rgb(189, 189, 189);
 }
 .mambra, .mambra:hover, .mambra:focus, .mambra:active {
     text-decoration: none;
     color: #121942;
 }
-
+.addaha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 @media screen and (max-width: 959px) {
     .dashboard-totals {
         display: flex;
@@ -250,7 +258,6 @@
         font-size: 100% ;
     }
 }
-
 @media screen and (max-width: 600px) {
     .dashboard-profile {
         display: flex;
@@ -273,5 +280,10 @@
     }
     .flex-22{
         flex: 0.7;
+    }
+    .dash-view {
+        width: 120px;
+        padding: 0 10px;
+        font-size: 13px;
     }
 }

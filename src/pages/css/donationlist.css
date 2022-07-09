@@ -1,0 +1,48 @@
+.Donatelist {
+    display: flex;
+
+}
+.dashboard-menu {
+    flex: 0.2;
+}
+.donate-search {
+    display: flex;
+    width: 30%;
+    height: 40px;
+    border: 1px solid rgb(190, 176, 176);
+    border-radius: 30px;
+    justify-content: left ;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.donate-search input {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    height:38px;
+    width: 85%;
+
+}
+
+@media screen and (max-width: 959px) {
+    .Donatelist {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .donate-search {
+        display: flex;
+        width: 60%;
+        height: 40px;
+        border: 1px solid rgb(190, 176, 176);
+        border-radius: 30px;
+        justify-content: left;
+        align-items: center;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+}

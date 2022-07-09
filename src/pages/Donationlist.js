@@ -1,6 +1,7 @@
 import React from 'react';
-import './css/dashboard.css';
+import './css/donationlist.css';
 import Donationmenu from './component/Donationmenu';
+import './css/dashboard.css';
 import {Link} from 'react-router-dom';
 import {FaSearch, } from 'react-icons/fa';
 import {IoMdNotifications, } from 'react-icons/io';
@@ -9,13 +10,10 @@ import {IoIosArrowDown, IoIosArrowForward} from 'react-icons/io';
 import {HiOutlineArrowNarrowUp} from 'react-icons/hi';
 
 
-
-
-function Dashboard() {
+function Donationlist() {
   return (
-    <div className='dashboard-profile'>
-
-        <div className='dashboard-menu'>
+    <div className='Donatelist'>
+         <div className='dashboard-menu'>
             < Donationmenu />
         </div>
 
@@ -36,57 +34,10 @@ function Dashboard() {
                 </div>
             </div>
             <hr className='dash-underline'/>
-            <div className='dashboard-totals'>
 
-
-                <div className='dash-total profit' id='total donation' >
-                  <p className='dash-total-title'>Total Donations</p>
-                  <h2> $<span>22.2</span>K</h2>
-                  <p className='dash-total-text'>( $<span>15.8</span>k last year )</p>
-
-                  <span className='total-percent textprofit'> 
-                    <HiOutlineArrowNarrowUp className=''/>
-                    <p className=''>105.5 <em>%</em></p>
-                  </span>
-                </div>
-
-
-                <div className='dash-total loss' id='completed donations'>
-                  <p className='dash-total-title'>Completed Donations</p>
-                  <h2>114</h2>
-                  <p className='dash-total-text'>(85 last year )</p>
-
-                  <span className='total-percent textprofit'> 
-                    <HiOutlineArrowNarrowUp className=''/>
-                    <p className=''>47.64<em>%</em></p>
-                  </span>
-                </div>
-
-
-                <div className='dash-total loss' id='pending donation'>
-                  <p className='dash-total-title'>Pending Donations</p>
-                  <h2>24</h2>
-                  <p className='dash-total-text'>( 47 last year )</p>
-
-                  <span className='total-percent textloss'> 
-                    <HiOutlineArrowNarrowUp className=''/>
-                    <p className=''>-47.21 <em>%</em></p>
-                  </span>
-                </div>
-
-
-                <div className='dash-total rate' id='avarage rate'>
-                  <p className='dash-total-title'>Average rate</p>
-                  <h2>75 <em>%</em></h2>
-                  <p className='dash-total-text'>(62<em>%</em> last year )</p>
-
-                  <span className='total-percent textrate'> 
-                    <HiOutlineArrowNarrowUp className=''/>
-                    <p className=''>24.24 <em>%</em></p>
-                  </span>
-                </div>
-              
-              </div>
+            <div className='donate-search'>
+                <FaSearch className='mr-10' /> <input type="search" name="search" placeholder='Search by recipents' id='search' />
+            </div>
 
             <div className='dashboard-lists'>
             <div className='donation-list-head'>
@@ -120,4 +71,4 @@ function Dashboard() {
   )
 }
 
-export default Dashboard
+export default Donationlist
