@@ -1,4 +1,4 @@
-import React, { useState, createContext } from "react";
+import React, { useState } from "react";
 import "./css/Home.css";
 import "./css/Custom.css";
 import "./css/homemobile.css";
@@ -18,6 +18,7 @@ function Home() {
       },
     });
   };
+
   const [data, setData] = useState({});
 
   const { amount } = data;

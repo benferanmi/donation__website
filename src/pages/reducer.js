@@ -16,4 +16,17 @@ const reducer = (state, action) => {
   }
 };
 
+export const reducer1 = (state, action) => {
+  console.log(action);
+  switch (action.type) {
+    case "Email":
+      return {
+        ...state,
+        basket1: [...state.basket1, action.item],
+      };
+    default:
+      return state;
+  }
+};
+
 export default reducer;

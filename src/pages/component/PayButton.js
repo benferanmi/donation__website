@@ -3,7 +3,7 @@ import axios from "axios";
 import "./css/Homebar.css";
 import { useStateValue } from "../StateProvider";
 
-function PayButton() {
+function PayButton({ email }) {
   const [{ basket }] = useStateValue();
   const url = "http://localhost:5000";
   const handleCheckout = async (e) => {
@@ -16,6 +16,7 @@ function PayButton() {
     axios
       .post(`${url}/api/stripe/create-checkoutsession`, {
         data,
+        email,
       })
       .then((res) => {
         if (res.data.url) {

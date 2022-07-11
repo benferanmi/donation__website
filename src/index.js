@@ -8,14 +8,16 @@ import { Provider } from "react-redux";
 import { store } from "./app/store";
 // import reducer, { initialState } from "./reducer";
 import { StateProvider } from "./pages/StateProvider";
-import reducer, { initialState } from "./pages/reducer";
+import reducer, { initialState, reducer1 } from "./pages/reducer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
       <StateProvider initialState={initialState} reducer={reducer}>
-        <App />
+        <StateProvider initialState={initialState} reducer={reducer}>
+          <App />
+        </StateProvider>
       </StateProvider>
     </Provider>
   </React.StrictMode>
