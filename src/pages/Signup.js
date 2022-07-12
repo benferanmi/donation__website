@@ -9,14 +9,15 @@ import Spinner from "./component/Spinner";
 import Footer from "./Footer";
 
 function Signup() {
+  const [password, setPassword] = useState("wet");
   const [formData, setFormData] = useState({
     email: "",
     username: "",
-    password: "",
-    password2: "",
   });
-
-  const { email, username, password, password2 } = formData;
+  const { email, username } = formData;
+  console.log(email);
+  console.log(username);
+  console.log(password);
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -24,6 +25,15 @@ function Signup() {
   const { user, isLoading, isSuccess, isError, message } = useSelector(
     (state) => state.auth
   );
+
+  const generatePassword = () => {
+    // Create a random password
+    const randomPassword =
+      Math.random().toString(36).slice(2) + Math.random().toString(36).slice(2);
+
+    // Set the generated password as state
+    setPassword(randomPassword);
+  };
 
   useEffect(
     () => async () => {
@@ -49,16 +59,12 @@ function Signup() {
 
   const submit = (e) => {
     e.preventDefault();
-    if (password !== password2) {
-      toast.error("Password do not match");
-    } else {
-      const userData = {
-        email,
-        username,
-        password,
-      };
-      dispatch(register(userData));
-    }
+    const userData = {
+      email,
+      username,
+      password,
+    };
+    dispatch(register(userData));
     // stressing
   };
   if (isLoading) {
@@ -113,20 +119,12 @@ function Signup() {
               onChange={onChange}
             />
             <input
-              type="password"
+              type="text"
               className="form-control"
               placeholder="Password"
               name="password"
+              readOnly
               value={password}
-              onChange={onChange}
-            />
-            <input
-              type="password"
-              className="form-control"
-              placeholder="Confirm Password"
-              name="password2"
-              value={password2}
-              onChange={onChange}
             />
             <div className="remember">
               <input
@@ -145,7 +143,8 @@ function Signup() {
               className="form-control sy"
               value="Sign up"
               placeholder="Sign Up"
-            ></input>
+              onClick={generatePassword}
+            />
             <div className="alreadyhave">
               <p>Already have an account? </p>
               <Link to="/login">

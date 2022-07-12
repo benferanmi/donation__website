@@ -96,7 +96,7 @@ function Form() {
       </div>
 
       <div className="form-position">
-        <form onSubmit={onSubmit}>
+        <form>
           <div className="form-left">
             <div className="form__lists">
               <div className="form__lists1">
@@ -253,7 +253,7 @@ function Form() {
                 className="form__submit"
                 onClick={click}
               /> */}
-                <PayButton email={email} />
+                <PayButton onSubmit={onSubmit} email={email} />
               </div>
             </div>
           </div>
