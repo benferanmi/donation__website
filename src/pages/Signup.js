@@ -65,7 +65,6 @@ function Signup() {
       password,
     };
     dispatch(register(userData));
-    // stressing
   };
   if (isLoading) {
     return <Spinner />;

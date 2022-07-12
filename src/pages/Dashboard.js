@@ -7,8 +7,20 @@ import { IoMdNotifications } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 import { HiOutlineArrowNarrowUp } from "react-icons/hi";
+import { useSelector, useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 function Dashboard() {
+  const { user } = useSelector((state) => state.auth);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  if (user) {
+    navigate("/dashboard");
+  } else {
+    navigate("/");
+  }
+
   const [customers, setCustomers] = useState([]);
 
   const url = "http://localhost:5000/api/stripe/customers";
@@ -28,6 +40,13 @@ function Dashboard() {
 
     fetchData();
   }, []);
+  // console.log(customers[0].balance);
+  console.log(customers.reduce((a, v) => (a = a + v.balance), 0));
+  var formatter = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+  });
+
   return (
     <div className="dashboard-profile">
       <div className="dashboard-menu">
@@ -61,8 +80,11 @@ function Dashboard() {
           <div className="dash-total profit" id="total donation">
             <p className="dash-total-title">Total Donations</p>
             <h2>
-              {" "}
-              $<span>22.2</span>K
+              <span>
+                {formatter.format(
+                  customers.reduce((a, v) => (a = a + v.balance), 0)
+                )}
+              </span>
             </h2>
             <p className="dash-total-text">
               ( $<span>15.8</span>k last year )
@@ -78,7 +100,7 @@ function Dashboard() {
 
           <div className="dash-total loss" id="completed donations">
             <p className="dash-total-title">Completed Donations</p>
-            <h2>114</h2>
+            <h2>{customers.length}</h2>
             <p className="dash-total-text">(85 last year )</p>
 
             <span className="total-percent textprofit">

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Spinner from "../pages/component/Spinner";
-import { createStore, reset } from "../features/store/storeSlice";
+import { register, reset } from "../features/auth/authSlice";
 import { toast } from "react-toastify";
 import { useSelector, useDispatch } from "react-redux";
 import {
@@ -20,6 +20,7 @@ import { useStateValue } from "./StateProvider";
 const { useNavigate } = require("react-router-dom");
 
 function Form() {
+  const [password, setPassword] = useState("");
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -55,20 +56,14 @@ function Form() {
     (state) => state.auth
   );
 
-  useEffect(
-    () => async () => {
-      if (isError) {
-        toast.error(message);
-      }
-      if (isSuccess || user) {
-        toast.success("Registration Successful");
-        navigate("/");
-      }
+  const generatePassword = () => {
+    // Create a random password
+    const randomPassword =
+      Math.random().toString(36).slice(2) + Math.random().toString(36).slice(2);
 
-      dispatch(reset());
-    },
-    [user, isError, message, isSuccess, dispatch, navigate]
-  );
+    // Set the generated password as state
+    setPassword(randomPassword);
+  };
 
   function onChange(e) {
     setFormData((prevState) => ({
@@ -77,9 +72,26 @@ function Form() {
     }));
   }
 
+  console.log(password);
+  // console.log(formData);
+
   function onSubmit(e) {
     e.preventDefault();
-    dispatch(createStore(formData));
+    const userData = {
+      firstName,
+      lastName,
+      email,
+      phone,
+      organization,
+      address1,
+      address2,
+      country,
+      city,
+      state,
+      zip,
+      password,
+    };
+    dispatch(register(userData));
   }
 
   const [{ basket }] = useStateValue();
@@ -110,6 +122,7 @@ function Form() {
                     id="fname"
                     className="form__input"
                     onChange={onChange}
+                    onClick={generatePassword}
                   />
                 </div>
                 <div className="form__list__option">
@@ -243,6 +256,17 @@ function Form() {
                     onChange={onChange}
                   />
                 </div>
+                <div className="form__list__option" style={{ display: "none" }}>
+                  <FaAddressCard className="form__icon" />
+                  <input
+                    type="postal"
+                    name="password"
+                    value={password}
+                    id="password"
+                    placeholder="Password"
+                    className="form__input"
+                  />
+                </div>
               </div>
               <div className="form__button">
                 {/* <input
@@ -251,9 +275,9 @@ function Form() {
                 value="Proceed to payment"
                 id="submit"
                 className="form__submit"
-                onClick={click}
+                onClick={generatePassword}
               /> */}
-                <PayButton email={email} />
+                <PayButton onClick={generatePassword} email={email} />
               </div>
             </div>
           </div>
