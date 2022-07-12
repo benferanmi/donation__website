@@ -4,6 +4,7 @@ import "./css/Custom.css";
 import "./css/homemobile.css";
 import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
+import Homebar from "./component/Homebar";
 
 function Home() {
   const [{ basket }, dispatch] = useStateValue();
@@ -31,6 +32,7 @@ function Home() {
 
   return (
     <div className="home">
+      <Homebar />
       <div className="sections">
         {/* <form onSubmit={submit}> */}
         <div className="section__logo">
